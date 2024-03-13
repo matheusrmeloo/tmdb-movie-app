@@ -1,0 +1,69 @@
+/* Estilo para o contêiner principal */
+.my-movies {
+	margin-top: 24px; /* Adiciona margem superior */
+	text-align: center; /* Centraliza o conteúdo de texto */
+}
+
+/* Estilo para o título h1 dentro do contêiner */
+.my-movies h1 {
+	margin-bottom: 14px; /* Adiciona margem inferior ao título */
+}
+
+/* Estilo para a lista não ordenada (ul) dentro do contêiner */
+.my-movies ul {
+	list-style: none; /* Remove os marcadores de lista */
+	padding: 0 20px; /* Adiciona preenchimento à esquerda e à direita */
+	display: flex; /* Usa display flex para o layout horizontal */
+	flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha em telas menores */
+	justify-content: left; /* Alinha os itens à esquerda */
+}
+
+/* Estilo para cada item de lista (li) dentro da lista não ordenada */
+.my-movies ul li {
+	flex: 0 0 calc(33.33% - 20px); /* Calcula a largura de cada item para ocupar um terço da largura disponível com margem entre eles */
+	margin: 10px; /* Adiciona margem ao redor de cada item */
+	max-width: 250px; /* Define a largura máxima para cada item */
+	position: relative; /* Permite que os botões se posicionem em relação a este item */
+}
+
+/* Estilo para o subtítulo h2 dentro de cada item da lista */
+.my-movies h2 {
+	font-size: 18px; /* Define o tamanho da fonte */
+	margin-bottom: 10px; /* Adiciona margem inferior ao subtítulo */
+}
+
+/* Estilo para as imagens dentro de cada item da lista */
+.my-movies img {
+	width: 100%; /* Faz com que a imagem ocupe 100% da largura do contêiner pai */
+	max-height: 300px; /* Define a altura máxima para as imagens */
+	border-radius: 10px; /* Adiciona bordas arredondadas */
+}
+
+/* Estilo para o contêiner dos botões dentro de cada item da lista */
+.my-movies .buttons {
+	display: flex; /* Usa display flex para o layout horizontal dos botões */
+	justify-content: space-between; /* Coloca os botões em cada extremidade */
+	padding: 10px; /* Adiciona preenchimento aos botões */
+}
+
+/* Estilo para os links e botões dentro do contêiner de botões */
+.my-movies .buttons a,
+.my-movies .buttons button {
+	font-size: 15px;
+	font-weight: bold;
+	text-decoration: none; /* Remove a decoração de texto dos links */
+	color: black; /* Cor do texto */
+	background-color: bisque; /* Cor de fundo */
+	border-radius: 5px; /* Adiciona bordas arredondadas */
+	padding: 7px 20px; /* Define o tamanho mínimo dos botões */
+	border: 0; /* Remove a borda padrão dos botões */
+	cursor: pointer; /* Adiciona um cursor de ponteiro ao passar o mouse */
+	transition: all 0.3s; /* Adiciona uma transição suave de cores */
+}
+
+/* Estilo para os links e botões ao passar o mouse */
+.my-movies .buttons a:hover,
+.my-movies .buttons button:hover {
+	background-color: #ffcc80; /* Cor de fundo alterada ao passar o mouse */
+	color: #333; /* Cor do texto alterada ao passar o mouse */
+}
